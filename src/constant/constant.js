@@ -1,1 +1,2 @@
-export const INITIAL_TIME = 25 * 60; // 25 minutes in seconds
+export const INITIAL_SESSIONTIME = 25;
+export const INITIAL_BREAKTIME = 5;

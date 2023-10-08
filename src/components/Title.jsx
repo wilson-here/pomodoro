@@ -1,5 +1,5 @@
 function Title() {
-  return <h1 className="title">25 + 5 Clock</h1>;
+  return <h1 className="title">Pomodoro</h1>;
 }
 
 export default Title;
