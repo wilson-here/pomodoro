@@ -1,9 +1,12 @@
 import { useState, useRef } from "react";
 import "./styles/App.scss";
-import Title from "./components/Title";
+import BackgroundVideo from "./components/BackgroundVideo";
+// import Title from "./components/Title";
 import CustomTime from "./components/CustomTime";
 import Display from "./components/Display";
+import BreakBell from "./components/BreakBell";
 import Control from "./components/Control";
+import MusicPlayer from "./components/MusicPlayer";
 import CopyRight from "./components/CopyRight";
 import { INITIAL_SESSIONTIME } from "./constant/constant";
 import { INITIAL_BREAKTIME } from "./constant/constant";
@@ -48,8 +51,9 @@ function App() {
   };
   return (
     <div className="bg">
+      <BackgroundVideo />
       <div className="content">
-        <Title />
+        {/* <Title /> */}
         <div className="custom_wrap">
           <CustomTime
             type="break"
@@ -73,17 +77,13 @@ function App() {
           duration={isSessionTime ? sessionTime : breakTime}
           audioRef={audioRef}
         />
-        <audio
-          id="beep"
-          preload="auto"
-          src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
-          ref={audioRef}
-        ></audio>
+        <BreakBell audioRef={audioRef} />
         <Control
           isPlaying={isPlaying}
           toggleIsPlaying={toggleIsPlaying}
           reset={reset}
         />
+        <MusicPlayer />
         <CopyRight color={"#a36f5c"} size="1.5rem" />
       </div>
     </div>

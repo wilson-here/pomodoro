@@ -2,7 +2,7 @@ function CustomTime({ type, duration, increment, decrement }) {
   return (
     <div className="custom">
       <h2 id={`${type}-label`} className="custom_txt">
-        {type} <br className="only-sm" />
+        {type} {/* <br className="only-sm" /> */}
         Length
       </h2>
       <button
