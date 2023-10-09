@@ -70,9 +70,15 @@ html {
   font-family: "Courier Prime", monospace;
 
   color: white;
-  font-size: 62.5%;
+  font-size: 100%;
   min-width: 320px;
   text-transform: lowercase;
+  @include bp(md) {
+    font-size: 80%;
+  }
+  @include bp(sm) {
+    font-size: 62.5%;
+  }
 }
 
 .bg {
@@ -102,6 +108,8 @@ html {
     height: 100%;
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     z-index: -1;
+    @include bp(sm) {
+    }
   }
 }
 
