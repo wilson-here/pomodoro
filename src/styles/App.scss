@@ -140,6 +140,7 @@ html {
       justify-content: center;
       gap: 2rem;
       margin-top: 1.5vw;
+      flex-direction: column;
 
       @include bp(sm) {
         gap: 1.5rem;
