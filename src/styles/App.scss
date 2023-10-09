@@ -136,11 +136,11 @@ html {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 2rem;
+      gap: 4rem;
       margin-top: 1.5vw;
-      flex-direction: column;
+      @include bp(md) {
+        flex-direction: column;
 
-      @include bp(sm) {
         gap: 0;
         margin-top: 1rem;
       }
@@ -180,7 +180,7 @@ html {
     }
     &_timer {
       font-size: 10rem;
-      @include bp(sm) {
+      @include bp(md) {
         font-size: 8rem;
       }
     }
