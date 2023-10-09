@@ -79,13 +79,10 @@ html {
 
 .bg {
   height: 100vh;
-  // background-image: url(../assets/img/bg.jpg);
-  // background-image: url(../assets/video/bg.mp4);
   background-size: cover;
   background-position: center;
   text-align: center;
   position: relative;
-  // padding-top: 5rem;
   &::before {
     content: "";
     width: 100%;
@@ -134,9 +131,6 @@ html {
     &_txt {
       font-weight: 100;
       font-size: 2.4rem;
-      // @include bp(md) {
-      //   font-size: 2rem;
-      // }
     }
     &_wrap {
       display: flex;
@@ -177,17 +171,12 @@ html {
     margin: 1vw auto;
 
     border-radius: 10px;
-    // @include bp(md) {
-    //   padding: 1.5rem;
-    // }
+
     @include bp(sm) {
       margin: 0 auto;
     }
     &_txt {
       font-size: 2.4rem;
-      // @include bp(md) {
-      //   font-size: 2rem;
-      // }
     }
     &_timer {
       font-size: 10rem;
@@ -209,9 +198,4 @@ html {
       font-size: 2rem;
     }
   }
-  // &-player {
-  //   @include bp(lg) {
-  //     // height: 100px;
-  //   }
-  // }
 }
