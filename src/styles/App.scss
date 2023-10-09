@@ -205,10 +205,9 @@ html {
       font-size: 2rem;
     }
   }
-  &-player {
-    height: 152px;
-    @include bp(lg) {
-      // height: 100px;
-    }
-  }
+  // &-player {
+  //   @include bp(lg) {
+  //     // height: 100px;
+  //   }
+  // }
 }
